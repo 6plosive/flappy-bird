@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxalg1laay5kh"]
+
+[ext_resource type="Script" path="res://bird.gd" id="1_ekf64"]
+
+[node name="Bird" type="Sprite2D"]
+script = ExtResource("1_ekf64")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="RigidBody2D"]
+color = Color(1, 1, 0, 1)
+polygon = PackedVector2Array(-10, -15, 15, 0, -10, 15)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+polygon = PackedVector2Array(-10, -15, 15, 0, -10, 15)
