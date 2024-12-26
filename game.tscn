@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://emcr02akf7ja"]
+[gd_scene load_steps=3 format=3 uid="uid://emcr02akf7ja"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_5yo28"]
 [ext_resource type="PackedScene" uid="uid://cxalg1laay5kh" path="res://bird.tscn" id="1_dqe2v"]
-[ext_resource type="PackedScene" uid="uid://c8bnav7h6u233" path="res://pillar.tscn" id="3_7lmun"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_5yo28")
@@ -15,8 +14,6 @@ color = Color(0.753161, 0.909353, 0.970503, 1)
 
 [node name="Bird" parent="." instance=ExtResource("1_dqe2v")]
 position = Vector2(576, 324)
-
-[node name="Area2D" parent="." instance=ExtResource("3_7lmun")]
 
 [node name="SpawnTimer" type="Timer" parent="."]
 autostart = true
